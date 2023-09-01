@@ -208,6 +208,9 @@ header {
 }
 
 .client__item {
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
 
 .nav__about-us {
