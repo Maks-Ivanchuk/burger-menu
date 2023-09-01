@@ -8,24 +8,122 @@
    <link rel="stylesheet" href="./src/styles/style.scss">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">   
    <title>Retromagaz</title>
 </head>
-
 <body>
-   <div class="wrapper">
-      <main>
-            
-      </main>
-   </div>
-   <script src=" src/script.js">
-   </script>
+   <header>
+      <div class="container">
+         <div class="header__top">
+            <a class="header__logo" href="#">
+               <img src="/src/img/header-icon.svg" alt="Logo">
+            </a>
+            <button class="header__burger">
+               <div class="burger__menu">
+                  <div class="burger__bar"></div>
+                  <div class="burger__bar"></div>
+                  <div class="burger__bar"></div>
+               </div>
+            </button>
+            <div class="header__search">
+               <input class="search__input" placeholder="Я шукаю" type="text">
+               <button class="search__btn">
+                  <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                     <path d="M10.4082 19.8155C12.4957 19.8151 14.5229 19.1163 16.1673 17.8304L21.3371 23L23 21.3372L17.8302 16.1676C19.1167 14.5232 19.816 12.4956 19.8165 10.4077C19.8165 5.22055 15.5957 1 10.4082 1C5.22077 1 1 5.22055 1 10.4077C1 15.5949 5.22077 19.8155 10.4082 19.8155ZM10.4082 3.35193C14.2997 3.35193 17.4644 6.51646 17.4644 10.4077C17.4644 14.299 14.2997 17.4635 10.4082 17.4635C6.51676 17.4635 3.35206 14.299 3.35206 10.4077C3.35206 6.51646 6.51676 3.35193 10.4082 3.35193Z"/>
+                  </svg>
+               </button>
+            </div>
+            <a href= "#" class="header__basket">
+               <svg class="basket-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                  <path d="M14 15.125H30.1803L28.4344 24.5H15.3525L14 15.125ZM14 15.125L13.6311 11.2442L9.5 9.5" stroke="white" stroke-width="2"></path>
+                  <circle cx="16.25" cy="29.75" r="1.5" fill="white"></circle>
+                  <circle cx="26.75" cy="29.75" r="1.5" fill="white"></circle>
+               </svg>
+            </a>
+         </div>
+         <div class="header__nav">
+            <div class="nav__logo">
+               <a href="">RETROMAGAZ</a>
+               <div class="nav__close">
+                  <div class="close-icon"></div>
+                  <div class="close-icon"></div>
+               </div>
+            </div>
+            <div class="nav__catalog">
+               <a class="catalog__item" href="#">PLAYSTATION</a>
+               <a class="catalog__item" href="#">XBOX</a>
+               <a class="catalog__item" href="#">NINTENDO</a>
+               <a class="catalog__item" href="#">STEAM DECK</a>
+               <a class="catalog__item" href="#">КОНСОЛІ ІНШЕ</a>
+               <a class="catalog__item" href="#">ІГРАШКИ</a>
+               <a class="catalog__item" href="#">ГАДЖЕТИ</a>
+               <a class="catalog__item" href="#">СМАКОЛИКИ</a>
+               <a class="catalog__item" href="#">РІЗНЕ</a>
+               <a class="catalog__item" href="#">АКЦІЇ</a>
+            </div>
+            <div class="nav__client">
+               <a class="client__item" href="#">ОСОБИСТИЙ КАБІНЕТ</a>
+               <a class="client__item" href="#">КОШИК</a>
+               <a class="client__item" href="#">ОБРАНЕ</a>
+            </div>
+            <div class="nav__about-us">
+               <a class="about-us__item" href="#">ПРО МАГАЗИН</a>
+               <a class="about-us__item" href="#">ВАКАНСІЇ</a>
+               <a class="about-us__item" href="#">ОПЛАТА ТА ДОСТАВКА</a>
+               <a class="about-us__item" href="#">ГАРАНТІЯ ТА ПОВЕРНЕННЯ</a>
+               <a class="about-us__item" href="#">КУПУЄМО</a>
+               <a class="about-us__item" href="#">ПРОКАТ</a>
+               <a class="about-us__item" href="#">КОНТАКТИ</a>
+            </div>
+            <div class="nav__info">
+               <div class="info__social-networks">
+                  <p class="social-networks__title">СОЦІАЛЬНІ МЕРЕЖІ</p>
+                  <div class="social-networks__wrapper">
+                     <a class="social-networks__item" href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M29 6.125C29 5.27865 28.6989 4.54622 28.0967 3.92773C27.4945 3.30924 26.7539 3 25.875 3H7.125C6.27865 3 5.54622 3.30924 4.92773 3.92773C4.30924 4.54622 4 5.27865 4 6.125V9.25H9.56641C11.4544 7.16667 13.7656 6.125 16.5 6.125C19.2344 6.125 21.5456 7.16667 23.4336 9.25H29V6.125ZM10.25 15.5C10.25 17.2253 10.8604 18.6982 12.0811 19.9189C13.3018 21.1396 14.7747 21.75 16.5 21.75C18.2253 21.75 19.6982 21.1396 20.9189 19.9189C22.1396 18.6982 22.75 17.2253 22.75 15.5C22.75 13.7747 22.1396 12.3018 20.9189 11.0811C19.6982 9.86035 18.2253 9.25 16.5 9.25C14.7747 9.25 13.3018 9.86035 12.0811 11.0811C10.8604 12.3018 10.25 13.7747 10.25 15.5ZM29 12.375H25.2891C25.6797 13.4492 25.875 14.4909 25.875 15.5C25.875 18.1042 24.9635 20.3177 23.1406 22.1406C21.3177 23.9635 19.1042 24.875 16.5 24.875C13.8958 24.875 11.6823 23.9635 9.85938 22.1406C8.03646 20.3177 7.125 18.1042 7.125 15.5C7.125 14.4909 7.32031 13.4492 7.71094 12.375H4V24.875C4 25.7539 4.30111 26.4945 4.90332 27.0967C5.50553 27.6989 6.24609 28 7.125 28H25.875C26.7539 28 27.4945 27.6989 28.0967 27.0967C28.6989 26.4945 29 25.7539 29 24.875V12.375Z" fill="white"></path>
+                        </svg>
+                     </a>
+                     <a class="social-networks__item" href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M21.1754 3H16.8347V20.029C16.8347 22.058 15.1653 23.7247 13.0877 23.7247C11.0101 23.7247 9.34064 22.058 9.34064 20.029C9.34064 18.0363 10.973 16.4058 12.9764 16.3333V12.058C8.56155 12.1304 5 15.6449 5 20.029C5 24.4493 8.63575 28 13.1248 28C17.6138 28 21.2496 24.4131 21.2496 20.029V11.2971C22.882 12.4565 24.8853 13.1449 27 13.1812V8.9058C23.7353 8.7971 21.1754 6.1884 21.1754 3Z" fill="white"></path>
+                        </svg>
+                     </a>
+                     <a class="social-networks__item" href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M22.9974 7.34627H19.285C18.845 7.34627 18.3562 7.96481 18.3562 8.78678V11.6513H23L22.2976 15.7364H18.3562V28H13.9749V15.7364H10V11.6513H13.9749V9.24862C13.9749 5.8013 16.2131 3 19.285 3H22.9974V7.34627Z" fill="white"></path>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="info__schedule">
+                  <p class="schedule__title">ГРАФІК РОБОТИ</p>
+                  <span class="schedule__item">10:00 - 20:00 без вихідних</span>
+               </div>
+               <div class="info__contacts">
+                  <p class="contacts__title">ТЕЛЕФОНИ</p>
+                  <span class="contacts__item">0 800 33 41 45</span>
+               </div>
+               <div class="info__address">
+                  <p class="address__title">МАГАЗИНИ</p>
+                  <span class="address__item">Київ, вул. Івана Франка, 42</span>
+                  <span class="address__item">Київ, Проспект Степана Бандери 16/6</span>
+                  <span class="address__item">Львів, вул Ігоря Білозіра 8 (колишня Герцена 8)</span>
+                  <span class="address__item">Одеса, вул. Мала Арнаутська 44</span>
+               </div>
+            </div>
+            <div class="nav__language">
+               <button class="language-btn">УКР</button>
+               <button class="language-btn">РУС</button>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <div class="container"></div>
+      <div id="overlay"></div>
+   </main>
+   <footer></footer>
+   <script src=" src/script.js"></script>
 </body>
-
 </html>
