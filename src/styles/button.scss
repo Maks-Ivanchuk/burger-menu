@@ -23,11 +23,11 @@
    color: #fff;
 
    &:first-child{
-      color: #5be45b;
+      color: $btn-green;
    }
    
    &:hover {
-      color: #5be45b;
+      color: $btn-green;
       transition: .2s ease;
    }
 }

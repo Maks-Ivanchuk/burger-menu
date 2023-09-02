@@ -1,9 +1,18 @@
+$main-green: #0d0;
+$btn-green: #5be45b;
+$white: #fff;
+$dirty-white: #c4c4c4;
+$main-deep-blue: #131730;
+$main-light-blue: #212648;
+$border-grey: #3c4b72;
+
 body {
-   background-color: #131730;
+   background-color: $main-deep-blue;
    color: #fff;
    display: flex;
    flex-direction: column;
    height: 100%;
+   overflow: hidden;
 }
 
 .body-block-scroll {
@@ -15,8 +24,4 @@ body {
    width: 930px;
    padding-left: 15px;
    padding-right: 15px;
-
-   @media screen and (min-width: 1200px) {
-
-   }
 }
