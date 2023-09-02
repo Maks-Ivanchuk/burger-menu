@@ -98,8 +98,8 @@ header {
 }
 
 .header__nav{
-   width: 430px;
-   position: absolute;
+   max-width: 430px;
+   position: fixed;
    top: 0px;
    right: -430px;
    bottom: 0px;
