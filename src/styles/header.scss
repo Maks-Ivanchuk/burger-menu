@@ -3,9 +3,7 @@ header {
    display: flex;
    justify-content: center;
 
-   @media screen and (min-width: 1200px) {
-      
-   }
+   @media screen and (min-width: 1200px) {}
 }
 
 .header__top {
@@ -35,7 +33,8 @@ header {
 .header__burger {
    height: 40px;
    width: 40px;
-   background-color: rgba(0, 0, 0, 0);;
+   background-color: rgba(0, 0, 0, 0);
+   ;
 }
 
 .burger__menu {
@@ -46,7 +45,7 @@ header {
    cursor: pointer;
 
    @media screen and (min-width: 1200px) {}
-} 
+}
 
 .burger__bar {
    width: 24px;
@@ -70,7 +69,7 @@ header {
    justify-content: space-between;
 }
 
-.search__input{
+.search__input {
    background-color: $main-deep-blue;
    padding-left: 20px;
    font-size: 18px;
@@ -97,7 +96,7 @@ header {
    width: 100%;
 }
 
-.header__nav{
+.header__nav {
    max-width: 430px;
    position: fixed;
    top: 0px;
@@ -160,9 +159,10 @@ header {
    width: 20px;
    height: 20px;
    flex-direction: column;
+   cursor: pointer;
 
    &:hover {
-      .close-icon{
+      .close-icon {
          background-color: $white;
       }
    }
@@ -229,7 +229,7 @@ header {
    gap: 10px;
 }
 
-.social-networks__wrapper{
+.social-networks__wrapper {
    display: flex;
    gap: 20px;
 }
@@ -263,7 +263,7 @@ header {
    }
 
    span {
-      margin-bottom:15px;
+      margin-bottom: 15px;
    }
 }
 
