@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import MyReactComponent from '../react_components/MyReactComponent.js';
+import MyReactComponent from '../react_components/AppReact.js';
 
 document.addEventListener("DOMContentLoaded", () => {
    let body = document.querySelector('body');
