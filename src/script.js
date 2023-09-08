@@ -1,3 +1,7 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import MyReactComponent from '../react_components/MyReactComponent.js';
+
 document.addEventListener("DOMContentLoaded", () => {
    let body = document.querySelector('body');
    let headerNav = document.querySelector('.header__nav');
@@ -17,9 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
       headerNav.classList.remove('header__nav--active');
    })
 
-   overlay.addEventListener('click', () => { 
+   overlay.addEventListener('click', () => {
       body.classList.remove('body-block-scroll');
       overlay.classList.remove('overlay-active');
       headerNav.classList.remove('header__nav--active');
    })
+
+   const rootElement = createRoot(document.querySelector('#react-root'));
+   rootElement.render(<MyReactComponent />);
 });
