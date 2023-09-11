@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Abc from '../react_components/App-react.js';
+import App from '../react_components/App.jsx';
 
 document.addEventListener("DOMContentLoaded", () => {
    // let body = document.querySelector('body');
@@ -28,5 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
    // })
 
    const rootElement = createRoot(document.querySelector('.container'));
-   rootElement.render(<Abc />);
+   rootElement.render(<App />);
 });
