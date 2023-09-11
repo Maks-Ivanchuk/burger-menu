@@ -28,7 +28,7 @@ const Nav = () => {
             <li className="list__item">Контакти</li>
             <li className="list__item">Доставка</li>
             <li className="list__item">Акції</li>
-            <li className="list__item">По нас</li>
+            <li className="list__item">Пронос</li>
          </ul>
       </div>
    )
