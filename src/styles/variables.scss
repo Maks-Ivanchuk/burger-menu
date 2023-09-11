@@ -23,6 +23,7 @@ body {
 .container {
    display: flex;
    width: 930px;
+   min-height: 150px;
    padding-left: 15px;
    padding-right: 15px;
 }
