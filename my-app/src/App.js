@@ -26,7 +26,6 @@ function App() {
                 <div className="burger__bar"></div>
               </div>
             </button>
-
             <div className="header__search">
               <input className="search__input" placeholder="Я шукаю" type="text" />
               <button className="search__btn">
