@@ -1,7 +1,3 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from '../react_components/App.jsx';
-
 document.addEventListener("DOMContentLoaded", () => {
    // let body = document.querySelector('body');
    // let headerNav = document.querySelector('.header__nav');
@@ -26,7 +22,4 @@ document.addEventListener("DOMContentLoaded", () => {
    //    overlay.classList.remove('overlay-active');
    //    headerNav.classList.remove('header__nav--active');
    // })
-
-   const rootElement = createRoot(document.querySelector('.container'));
-   rootElement.render(<App />);
 });
