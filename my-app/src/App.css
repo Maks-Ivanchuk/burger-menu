@@ -244,7 +244,7 @@ header {
   z-index: -100;
   background-color: #131730;
   flex-direction: column;
-  transition: all .2s linear;
+  transition: all .5s linear;
   display: flex;
   position: fixed;
   top: 0;
@@ -253,18 +253,12 @@ header {
   overflow: auto;
 }
 
-.header__nav--active {
-  max-width: 430px;
+.header__nav.header__nav--active {
+
   z-index: 100;
-  background-color: #131730;
-  flex-direction: column;
-  transition: all .2s linear;
-  display: flex;
-  position: fixed;
-  top: 0;
-  bottom: 0;
+
   right: 0;
-  overflow: auto;
+
 }
 
 .header__nav a {
@@ -418,7 +412,7 @@ header {
 #overlay {
   opacity: 0;
   pointer-events: none;
-  transition: all .2s ease-in-out;
+  transition: all .5s ease-in-out;
   position: fixed;
   inset: 0;
 }

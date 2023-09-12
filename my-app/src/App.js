@@ -8,7 +8,6 @@ function App() {
 
   const toggleHeaderMenu = () => {
     setIsOpen(!isOpen);
-    console.log(setIsOpen);
   };
 
   return (
@@ -47,10 +46,10 @@ function App() {
             </a>
           </div>
 
-          <div className={isOpen ? 'header__nav--active' : 'header__nav'}>
+          <div className={isOpen ? 'header__nav header__nav--active' : 'header__nav'}>
             <div className="nav__logo">
               <a href="">RETROMAGAZ</a>
-              <div className="nav__close">
+              <div className="nav__close" onClick={toggleHeaderMenu}>
                 <div className="close-icon"></div>
                 <div className="close-icon"></div>
               </div>
@@ -153,7 +152,12 @@ function App() {
           </div>
         </div>
       </header >
-      <div id="overlay"></div>
+      <div
+        id="overlay"
+        className={isOpen ? 'overlay-active' : ''}
+        onClick={toggleHeaderMenu}
+      >
+      </div>
     </>
   );
 }
