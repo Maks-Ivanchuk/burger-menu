@@ -254,11 +254,8 @@ header {
 }
 
 .header__nav.header__nav--active {
-
   z-index: 100;
-
   right: 0;
-
 }
 
 .header__nav a {

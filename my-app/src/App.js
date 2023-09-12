@@ -18,7 +18,6 @@ function App() {
             <a className="header__logo" href="#">
               <img src={headerLogo} alt="Logo" />
             </a>
-
             <button className="header__burger" onClick={toggleHeaderMenu}>
               <div className="burger__menu">
                 <div className="burger__bar"></div>
@@ -44,7 +43,6 @@ function App() {
               </svg>
             </a>
           </div>
-
           <div className={isOpen ? 'header__nav header__nav--active' : 'header__nav'}>
             <div className="nav__logo">
               <a href="">RETROMAGAZ</a>
