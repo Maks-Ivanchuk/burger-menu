@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+import headerLogo from './icon/header-icon.svg';
 import './App.css';
 
+
+
 function App() {
+
   return (
-    <header>
+
+    < header >
       <div className="container">
         <div className="header__top">
           <a className="header__logo" href="#">
-            <img src="/src/img/header-icon.svg" alt="Logo" />
+            <img src={headerLogo} alt="Logo" />
           </a>
           <button className="header__burger">
             <div className="burger__menu">
@@ -139,7 +143,7 @@ function App() {
           </div>
         </div>
       </div>
-    </header>
+    </header >
   );
 }
 
