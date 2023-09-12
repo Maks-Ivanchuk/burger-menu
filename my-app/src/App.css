@@ -249,13 +249,22 @@ header {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: -430px;
+  right: -100%;
   overflow: auto;
 }
 
-.header__nav.header__nav--active {
+.header__nav--active {
+  max-width: 430px;
   z-index: 100;
+  background-color: #131730;
+  flex-direction: column;
+  transition: all .2s linear;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   right: 0;
+  overflow: auto;
 }
 
 .header__nav a {
